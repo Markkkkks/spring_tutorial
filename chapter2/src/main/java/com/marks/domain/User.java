@@ -4,19 +4,19 @@ import java.io.Serializable;
 import java.util.Date;
 
 public class User implements Serializable {
-    private int id;
+    private int userId;
     private String username;
     private String password;
-    private int credit;
+    private int credits;
     private String lastIP;
     private Date lastVisit;
 
-    public int getId() {
-        return id;
+    public int getUserId() {
+        return userId;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setUserId(int userId) {
+        this.userId = userId;
     }
 
     public String getUsername() {
@@ -35,12 +35,12 @@ public class User implements Serializable {
         this.password = password;
     }
 
-    public int getCredit() {
-        return credit;
+    public int getCredits() {
+        return credits;
     }
 
-    public void setCredit(int credit) {
-        this.credit = credit;
+    public void setCredits(int credits) {
+        this.credits = credits;
     }
 
     public String getLastIP() {
